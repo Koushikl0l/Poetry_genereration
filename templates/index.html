@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+
+
+<body>
+<center>
+<h1><i>AI Poetry Generation</i></h1>
+<center><p style="text-align:center;"><b>Dataset:</b> Incorporate Wikipedia documents and pdf of 
+</br>English novels.around 2400 samples
+    with a 5600-word index.
+</br><b>Lemmatization:</b> Custom
+</br><b>Embedding Dim:</b> 150
+</br><b>Max-length:</b> 250
+</br><b>Layer:</b> 8-layer Bidirectional LSTM
+</br><b>Optimizer:</b> Adam
+</br><b>Learning_rate:</b> .001
+</p></center>
+
+
+
+
+
+<form method="POST">
+  <p><label for="w3review">Please write about your poetry topic:</label></p>
+  <textarea type="text" name="text_input" rows="4" cols="50"></textarea>
+  <br>
+  <button type="submit">Generate</button>
+  <h4>Output:</h4>
+  
+</form>
+
+<form method="GET">
+
+    <textarea id="text_output" type="text" rows="15" cols="50">
+        {{ out }}
+      </textarea>
+
+</form>
+
+</center>
+
+</body>
+</html>
