@@ -43,7 +43,7 @@ def home():
         
         return render_template('index.html',out=model_output(input))
     else:
-        return render_template('index.html',out=model_output(input))
+        return render_template('index.html')
 
 
 
